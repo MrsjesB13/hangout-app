@@ -64,7 +64,7 @@ to enable your application.
           script.addEventListener('load', function () {
             var interval = global.setInterval(function () {
               // Make sure all scripts are loaded
-              if (global.gapi && global.gapi.hangout && gloabl.gapi.hangout.onApiReady && global.gadgets && global.gadgets.rpc) {
+              if (global.gapi && global.gapi.hangout && global.gapi.hangout.onApiReady && global.gadgets && global.gadgets.rpc) {
                 global.console.log("Hangouts Library loaded");
                 global.clearInterval(interval);
                 global.gapi.hangout.onApiReady.add(function (event) {
