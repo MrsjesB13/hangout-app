@@ -1,0 +1,7 @@
+{
+  "name": "hangout-app#gh-pages",
+  "private": true,
+  "dependencies": {
+    "hangout-app": "Scarygami/hangout-app#master"
+  }
+}
