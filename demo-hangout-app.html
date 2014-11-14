@@ -12,10 +12,15 @@
   </template>
 
   <script>
-    Polymer('demo-hangout-app', {
-      count: 0,
-      click: function () { this.count++; }
-    });
+    (function (global) {
+      Polymer('demo-hangout-app', {
+        readyCallback: function () {
+          global.console.log("demo-hangout-app ready");
+        },
+        count: 0,
+        click: function () { this.count++; }
+      });
+    }(this));
   </script>
 
 </polymer-element>
